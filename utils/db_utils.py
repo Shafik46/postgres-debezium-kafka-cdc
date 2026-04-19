@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_CONFIG = os.path.join(BASE_DIR, "configs.yaml")
 
 
-def load_config(section: str = None, config_file: str = DEFAULT_CONFIG) -> dict:
+def load_config(section: str = None, config_file: str = DEFAULT_CONFIG) :
     with open(config_file, "r") as f:
         config = yaml.safe_load(f)
 
