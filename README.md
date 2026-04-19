@@ -93,17 +93,6 @@ bash scripts/create-connector.sh
 python3 producer/ops_lifecycle_simulator.py --new-orders 10 --update-cycles 5 --sleep-seconds 5
 ```
 
-Or, if you stay in the repository root:
-
-```bash
-python3 -m venv CDC/.venv
-source CDC/.venv/bin/activate
-pip install -r CDC/requirements.txt
-cd CDC && docker compose up -d && cd ..
-bash CDC/scripts/create-connector.sh
-python3 CDC/producer/ops_lifecycle_simulator.py --new-orders 10 --update-cycles 5 --sleep-seconds 5
-```
-
 Note: Postgres init scripts run only when the database volume is created for the first time. If you already have an existing `postgres_data` volume, the new init script will not be replayed automatically.
 
 ## Simulator Behavior
