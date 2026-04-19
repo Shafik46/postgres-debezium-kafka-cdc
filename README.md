@@ -108,8 +108,8 @@ The simulator currently:
 Default simulator values:
 
 - `--new-orders 10`
-- `--update-cycles 5`
-- `--sleep-seconds 5`
+- `--update-cycles 10`
+- `--sleep-seconds 3`
 
 ## PostgreSQL Replication Checks
 
