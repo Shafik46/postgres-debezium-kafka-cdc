@@ -1,0 +1,8 @@
+psycopg2-binary==2.9.9
+pyyaml==6.0.1
+pytest==8.1.1
+polars==0.20.0
+sqlalchemy==2.0.0
+pyarrow==8.0.0
+duckdb==1.5.2
+Faker==37.1.0

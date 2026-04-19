@@ -1,0 +1,17 @@
+{
+  "name": "ops-lifecycle-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "topic.prefix": "ops",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "postgres",
+    "slot.name": "ops_lifecycle_slot",
+    "publication.name": "ops_lifecycle_publication",
+    "database.dbname": "financial_db",
+    "plugin.name": "pgoutput",
+    "schema.include.list": "ops_sys",
+    "table.include.list": "ops_sys.order_lifecycle,ops_sys.order_events"
+  }
+}
