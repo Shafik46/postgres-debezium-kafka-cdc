@@ -5,7 +5,6 @@ import sys
 import time
 import uuid
 from datetime import datetime, timezone
-
 from faker import Faker
 from psycopg2.extras import DictCursor
 
