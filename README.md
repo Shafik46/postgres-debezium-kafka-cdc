@@ -165,14 +165,6 @@ The simulator currently demonstrates:
 - `INSERT` events
 - `UPDATE` events
 
-It does not currently perform hard deletes, so delete CDC events are not part of this demo yet.
+It does not currently perform hard deletes
 
-## Purpose
-
-This project is intended for learning:
-
-- PostgreSQL logical replication
-- Debezium connector setup
-- Kafka Connect integration
-- CDC event flow from source table to Kafka topic
-- modeling business lifecycle changes as database events
+......
