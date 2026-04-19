@@ -6,6 +6,7 @@ import polars as pl
 import psycopg2
 import yaml
 import duckdb
+import uuid
 
 logger = logging.getLogger(__name__)
 
@@ -49,11 +50,6 @@ def transform_with_duckdb(df: pl.DataFrame, query: str):
     con.close()
 
     return result
-
-import io
-import uuid
-import polars as pl
-
 
 def load_data(
     df: pl.DataFrame,
@@ -142,9 +138,6 @@ def load_data(
         )
         raise
 
-# -------------------------------
-# LOGGING
-# -------------------------------
 def setup_logging():
     logging.basicConfig(
         level=logging.INFO,
